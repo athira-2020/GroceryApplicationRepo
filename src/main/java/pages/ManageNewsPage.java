@@ -13,6 +13,7 @@ public class ManageNewsPage {
 	
 	public WebDriver driver;
 	PageUtility pageutility=new PageUtility();
+	
 	@FindBy(xpath="//input[@placeholder='Username']")WebElement usernamefield;
 	@FindBy(xpath="//input[@placeholder='Password']")WebElement passwordfield;
 	@FindBy(xpath="//button[@type='submit']")WebElement signInButton;

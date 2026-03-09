@@ -109,6 +109,7 @@ public class ManageNewsTest extends Base{
 		managenewspage.clickChooseFileButton(filepath);
 		managenewspage.clickCategorySaveButton();
 		managenewspage.alertDisplayofCategory();
+		
 		}
 			
 	
