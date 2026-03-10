@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ACER\AppData\Local\Temp\testng-eclipse--606662130\testng-customsuite.xml</span>
+                    <span>C:\Users\ACER\AppData\Local\Temp\testng-eclipse-1524726057\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testScript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory">verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory">verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,7 +121,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testScript.ManageNewsTest</span>
+              <span class="class-name">testScript.ManageCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -135,9 +135,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dd5d6d0a9983e1ad27cb5be9ffbabe48, findElement {value=//li[contains(@class,&apos;ms-hover&apos;) and contains(@id,&apos;134-selectable&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ACER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58630}, goog:processID: 4464, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58630/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dd5d6d0a9983e1ad27cb5be9ffbabe48
+Command: [ecd7bd0831f3489ed78283766ca9a248, findElement {value=//li[contains(@class,&apos;ms-hover&apos;) and contains(@id,&apos;134-selectable&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ACER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63048}, goog:processID: 8308, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63048/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecd7bd0831f3489ed78283766ca9a248
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -154,9 +154,18 @@ Session ID: dd5d6d0a9983e1ad27cb5be9ffbabe48
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at pages.ManageNewsPage.clickDiscountButton(ManageNewsPage.java:167)
-	at testScript.ManageNewsTest.verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory(ManageNewsTest.java:108)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:48)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:486)
+	at pages.ManageCategoryPage.clickDiscountButton(ManageCategoryPage.java:67)
+	at testScript.ManageCategoryTest.verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory(ManageCategoryTest.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -192,7 +201,7 @@ Session ID: dd5d6d0a9983e1ad27cb5be9ffbabe48
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ACER\AppData\Local\Temp\testng-eclipse--606662130\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ACER\AppData\Local\Temp\testng-eclipse-1524726057\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,11 +210,11 @@ Session ID: dd5d6d0a9983e1ad27cb5be9ffbabe48
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.ManageNewsTest&quot;&gt;
+      &lt;class name=&quot;testScript.ManageCategoryTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testScript.ManageNewsTest --&gt;
+      &lt;/class&gt; &lt;!-- testScript.ManageCategoryTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -248,13 +257,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory')
-data.setCell(0, 2, 'testScript.ManageNewsTest')
-data.setCell(0, 3, 3326);
+data.setCell(0, 2, 'testScript.ManageCategoryTest')
+data.setCell(0, 3, 5009);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,20 +278,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testScript.ManageNewsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyTheUserIsAbleToLoginWithValidCredentialsAndLogout</span>
-                <br/>
-                <span class="ignored-method-name">verifyTheUserIsAbleToLoginWithValidCredentialsAndManageAdminUsers</span>
-                <br/>
-                <span class="ignored-method-name">verifyTheUserIsAbleToLoginWithValidCredentialsAndManageNews</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -291,7 +289,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.ManageCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browser_launch</span>
                 <span class="method-start">0 ms</span>
@@ -300,7 +298,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory</span>
-                <span class="method-start">1990 ms</span>
+                <span class="method-start">2728 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
