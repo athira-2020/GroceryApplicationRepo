@@ -11,5 +11,4 @@ public class PageUtility {
 		select.selectByIndex(index);
 	}
 
-	
 }

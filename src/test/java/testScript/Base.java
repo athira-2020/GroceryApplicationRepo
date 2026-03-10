@@ -16,7 +16,6 @@ public class Base {
 		driver.manage().window().maximize();
 	}
 
-	
 	//@AfterMethod
 	public void browser_quit()
 	{
