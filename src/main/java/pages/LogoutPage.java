@@ -5,14 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.FileUploadUtility;
-import utilities.PageUtility;
-
 public class LogoutPage {
-	public WebDriver driver;
-	PageUtility pageutility=new PageUtility();	
-	FileUploadUtility fileuploadutility=new FileUploadUtility();
-	
+	public WebDriver driver;		
 	@FindBy(xpath="//a[@data-toggle='dropdown']")WebElement admin;
 	@FindBy(xpath="//a[@class='dropdown-item' and contains(@href,'logout')]")WebElement logout;
 	

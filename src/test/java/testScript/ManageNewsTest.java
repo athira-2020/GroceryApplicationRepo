@@ -1,19 +1,15 @@
 package testScript;
 
 import java.io.IOException;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import constant.Constant;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base{
 	
-		@Test(priority=1)
+		@Test(priority=1,description="Login and Manage News")
 		public void verifyTheUserIsAbleToLoginWithValidCredentialsAndManageNews() throws IOException 
 		{
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");

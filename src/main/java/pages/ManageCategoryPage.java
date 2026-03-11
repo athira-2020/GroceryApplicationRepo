@@ -5,17 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import constant.Constant;
 import utilities.FileUploadUtility;
-import utilities.PageUtility;
 
 public class ManageCategoryPage {
-	public WebDriver driver;
-	PageUtility pageutility=new PageUtility();	
-	
-	FileUploadUtility fileuploadutility=new FileUploadUtility();
-	
+	public WebDriver driver;	
+	FileUploadUtility fileuploadutility=new FileUploadUtility();	
 	@FindBy(xpath="//a[contains(text(),'More info') and contains(@href,'list-category')]")WebElement manageCategoryMoreInfoButton;
 	@FindBy(xpath="//a[contains(@href,'Category/add')]")WebElement categoryNewButton;
 	@FindBy(xpath="//input[@id='category']")WebElement categoryButton;

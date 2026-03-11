@@ -4,16 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import utilities.FileUploadUtility;
 import utilities.PageUtility;
 
 public class ManageAdminUsersPage {
 	
 	public WebDriver driver;
-	PageUtility pageutility=new PageUtility();	
-	FileUploadUtility fileuploadutility=new FileUploadUtility();
-	
+	PageUtility pageutility=new PageUtility();		
 	@FindBy(xpath="//a[@class='small-box-footer' and contains(@href,'list-admin')]")WebElement adminUsersMoreInfoButton;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement adminUsersNewButton;
 	@FindBy(xpath="//input[@id='username']")WebElement adminUsersUsername;

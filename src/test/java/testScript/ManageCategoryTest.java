@@ -1,7 +1,6 @@
 package testScript;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -11,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class ManageCategoryTest extends Base{
 	
-	@Test(priority=4)
+	@Test(priority=1,description="Login and Manage Category")
 	public void verifyTheUserIsAbleToLoginWithValidCredentialsAndManageCategory() throws IOException 
 	{
 	String username=ExcelUtility.getStringData(1, 0, "loginpage");

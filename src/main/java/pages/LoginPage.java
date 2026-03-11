@@ -5,14 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.FileUploadUtility;
-import utilities.PageUtility;
-
 public class LoginPage {
 	
-	public WebDriver driver;
-	PageUtility pageutility=new PageUtility();	
-	FileUploadUtility fileuploadutility=new FileUploadUtility();
+	public WebDriver driver;	
 	@FindBy(xpath="//input[@placeholder='Username']")WebElement usernamefield;
 	@FindBy(xpath="//input[@placeholder='Password']")WebElement passwordfield;
 	@FindBy(xpath="//button[@type='submit']")WebElement signInButton;

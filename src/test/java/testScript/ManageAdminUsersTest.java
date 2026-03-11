@@ -1,16 +1,14 @@
 package testScript;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pages.LoginPage;
 import pages.ManageAdminUsersPage;
 import utilities.ExcelUtility;
 
 public class ManageAdminUsersTest extends Base{
-	@Test(priority=3)
+	@Test(priority=1,description="Login and Manage AdminUsers")
 	public void verifyTheUserIsAbleToLoginWithValidCredentialsAndManageAdminUsers() throws IOException
 	{
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
