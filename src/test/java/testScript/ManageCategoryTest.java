@@ -4,12 +4,10 @@ import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import constant.Constant;
 import pages.LoginPage;
 import pages.ManageCategoryPage;
-import pages.ManageNewsPage;
 import utilities.ExcelUtility;
+
 
 public class ManageCategoryTest extends Base{
 	
@@ -18,8 +16,6 @@ public class ManageCategoryTest extends Base{
 	{
 	String username=ExcelUtility.getStringData(1, 0, "loginpage");
 	String password=ExcelUtility.getStringData(1, 1, "loginpage");
-	String newsInput=ExcelUtility.getStringData(1, 2, "loginpage");
-	String filepath=Constant.IMAGEOFMANGO;
 	String category=ExcelUtility.getStringData(1, 5, "loginpage");
 	
 	LoginPage loginpage=new LoginPage(driver);	

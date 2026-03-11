@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.ManageAdminUsersPage;
-import pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageAdminUsersTest extends Base{
@@ -16,7 +15,6 @@ public class ManageAdminUsersTest extends Base{
 	{
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
-		String newsInput=ExcelUtility.getStringData(1, 2, "loginpage");
 		String adminusername=ExcelUtility.getStringData(1, 3, "loginpage");
 		String adminpassword=ExcelUtility.getStringData(1, 4, "loginpage");
 				
