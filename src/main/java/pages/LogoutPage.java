@@ -6,24 +6,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogoutPage {
-	public WebDriver driver;		
-	@FindBy(xpath="//a[@data-toggle='dropdown']")WebElement admin;
-	@FindBy(xpath="//a[@class='dropdown-item' and contains(@href,'logout')]")WebElement logout;
-	
-	public LogoutPage(WebDriver driver)
-	{
-		this.driver=driver;
+	public WebDriver driver;
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+	WebElement admin;
+	@FindBy(xpath = "//a[@class='dropdown-item' and contains(@href,'logout')]")
+	WebElement logout;
+
+	public LogoutPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void clickLogout()
-	{
+
+	public void clickLogout() {
 		logout.click();
 	}
 
-	public void clickAdmin() 
-	{
-		admin.click();		
+	public void clickAdmin() {
+		admin.click();
 	}
 
 }
